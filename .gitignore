@@ -1,0 +1,4 @@
+# Ignore everything by default
+*
+
+# Files that need to be tracked are added via `git add -f`
