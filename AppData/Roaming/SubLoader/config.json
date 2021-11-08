@@ -1,0 +1,14 @@
+{
+    "IsByNameChecked": true,
+    "IsByHashChecked": false,
+    "KeepWindowOnTop": true,
+    "DownloadToSubsFolder": false,
+    "AllowMultipleDownloads": true,
+    "OverwriteSameLanguageSub": true,
+    "WantedLanguages": [
+        {
+            "Name": "English",
+            "Code": "eng"
+        }
+    ]
+}
