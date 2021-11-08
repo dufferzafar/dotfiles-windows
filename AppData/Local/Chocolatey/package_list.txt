@@ -1,0 +1,244 @@
+Chocolatey v0.11.3
+7zip 19.0
+7zip.install 19.0
+activitywatch 0.11.0
+adb 31.0.2
+anydesk 6.3.3
+anydesk.portable 6.3.3
+audacity 3.1.0
+autohotkey.install 1.1.33.10
+autohotkey.portable 1.1.33.10
+bat 0.18.3
+calibre 5.31.1
+chocolatey 0.11.3
+chocolatey-core.extension 1.3.5.1
+chocolatey-dotnetfx.extension 1.0.1
+chocolatey-font-helpers.extension 0.0.4
+chocolateygui 0.19.0
+chocolatey-misc-helpers.extension 0.0.4
+chocolatey-windowsupdate.extension 1.0.4
+chromedriver 95.0.4638.540
+cloneapp 2.15.606
+composer 6.1.0
+copyq 5.0.0
+cpu-z 1.98
+cpu-z.install 1.98
+croc 9.4.2
+ctags 5.8.1
+dbeaver 21.2.4
+discord 1.0.9003
+discord.install 1.0.9003
+docker-compose 1.29.2
+docker-desktop 4.1.1
+DotNet4.5.2 4.5.2.20140902
+DotNet4.6.1 4.6.01055.20170308
+dotnet4.7.2 4.7.2.20210903
+dotnetcore-3.1-desktopruntime 3.1.20
+dotnetcore3-desktop-runtime 3.1.16
+dotnetcore-desktopruntime 3.1.20.20211031
+dotnetfx 4.8.0.20190930
+edgedeflector 1.1.3.0
+Everything 1.4.11009
+ext2fsd 0.69.0.20171118
+ffmpeg 4.4.1
+files 2.0
+filezilla 3.56.2
+filezilla.server 1.0.1
+FiraCode 5.2.20210831
+Firefox 94.0.1
+fzf 0.28.0
+genymotion 3.2.1
+gimp 2.10.28
+gitui 0.18.0
+golang 1.17.3
+GoogleChrome 95.0.4638.69
+gpg4win-vanilla 2.3.4.20191021
+hugo 0.89.1
+imagemagick 7.1.0.13
+imagemagick.app 7.1.0.13
+jadx 1.2.0
+javaruntime 8.0.231
+jq 1.6
+KB2533623 2.0.0
+KB2919355 1.0.20160915
+KB2919442 1.0.20160915
+KB2999226 1.0.20181019
+KB3033929 1.0.5
+KB3035131 1.0.3
+KB3063858 1.0.0
+keypirinha 2.26
+lazygit 0.31.2
+less 590.0
+lf 0.26
+logitech-webcam-software 2.80.853.0
+lxrunoffline 3.5.0
+mitmproxy 7.0.4
+mpv 2020.12.06
+mpv.install 2020.12.06
+mpvnet.install 5.4.9.0
+naps2 6.1.2
+naps2.install 6.1.2
+neovim 0.6.0-beta
+netcat 1.12
+netfx-4.7.2 4.7.2.0
+nirlauncher 1.23.53
+nmap 7.92
+nodejs 17.0.1
+nodejs.install 17.0.1
+nomachine 7.7.4.100
+nomacs 3.17.2206
+notion 2.0.18
+okular 20.04.0
+openjdk11 11.0.13.8
+openjdk13 13.0.102
+openssh 8.0.0.1
+openvpn 2.4.7
+paint.net 4.3.2
+pandoc 2.16.1
+PartitionMasterFree 16.0
+pdfsam 4.2.8
+pdfsam.install 4.2.8
+php 8.0.10
+python 3.10.0
+python3 3.10.0
+qbittorrent 4.3.9
+qpdf 10.3.2
+radare2 5.4.2
+rapidee 9.2.937
+ripgrep 13.0.0.20210621
+rsync 6.2.3
+rufus 3.17
+runinbash 0.1.1
+sandboxie 5.53.3
+sandboxie.install 5.53.3
+scrcpy 1.19
+screentogif 2.34.0
+sharex 13.6.1
+Shotcut 21.10.31
+shotcut.install 21.10.31
+slack 4.21.1
+spotify 1.1.71.560
+sqlitebrowser 3.12.2
+sqlitebrowser.install 3.12.2
+starship 0.58.0
+steam 3.0.1.20200226
+steam-client 2.10.91.91
+sublimetext4 4.0.0.411300
+sumatrapdf 3.3.3
+sumatrapdf.install 3.3.3.20210920
+sysinternals 2021.10.26
+telegram 3.1.8
+telegram.install 3.1.8
+tor-browser 10.5.10
+unity-hub 2.4.5.20210724
+vagrant 2.2.19
+vcredist140 14.29.30135
+vcredist2010 10.0.40219.32503
+vcredist2013 12.0.40660.20180427
+vcredist2015 14.0.24215.20170201
+vcxsrv 1.20.9.0
+virtualbox 6.1.28
+vlc 3.0.16
+vmware-workstation-player 16.2.0.18760230
+vscode-insiders 1.63.0.20211105
+vscode-insiders.install 1.63.0.20211105
+warp 1.6.28.0
+wireshark 3.4.9
+wiztree 4.04
+wsl2 2.0.0.20210721
+XAMPP-73 7.3.31
+xyplorer 22.20.0200
+youtube-dl 2021.06.06
+zip 3.0
+zoom 5.8.3.1581
+zoxide 0.7.6
+153 packages installed.
+
+1Password|7.9.825
+Age of Empires II Definitive Edition Lords of the West|
+Android Studio|4.1
+ASTER v2.28.1|v2.28.1
+Audacity 3.0.2|3.0.2
+BakkesMod version 3.0|3.0
+Brawlhalla|
+Discord|1.0.9001
+DiskInternals Linux Reader|4.9.1
+Epic Games Launcher|1.1.298.0
+Epic Online Services|2.0.28.0
+Far Cry 5|
+FFmpeg (Windows) for Audacity version 2.2.2|2.2.2
+FileZilla Server 1.1.0|1.1.0
+FortiClient VPN|6.4.3.1608
+Google Chrome|95.0.4638.69
+Google Web Designer|9.0.7.0
+Horizon Zero Dawn v.1.0.10.5/6278995 (44600).|
+HP LaserJet Pro MFP M125-M126|15.0.15310.1316
+Java 8 Update 281|8.0.2810.9
+Java 8 Update 281 (64-bit)|8.0.2810.9
+Kingdom Come: Deliverance|
+LightBulb 2.3|2.3
+Logitech Webcam Software|2.80
+Microsoft OneDrive|21.016.0124.0003
+Microsoft Update Health Tools|2.84.0.0
+Microsoft Visual C++ 2005 Redistributable|8.0.59193
+Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.17|9.0.30729
+Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.6161|9.0.30729.6161
+Microsoft Visual C++ 2010  x64 Redistributable - 10.0.40219|10.0.40219
+Microsoft Visual C++ 2010  x86 Redistributable - 10.0.40219|10.0.40219
+Microsoft Visual C++ 2012 Redistributable (x64) - 11.0.61030|11.0.61030.0
+Microsoft Visual C++ 2012 Redistributable (x86) - 11.0.61030|11.0.61030.0
+Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.30501|12.0.30501.0
+Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.30501|12.0.30501.0
+Microsoft Windows Desktop Runtime - 3.1.20 (x64)|3.1.20.30521
+Microsoft Windows Desktop Runtime - 3.1.20 (x86)|3.1.20.30521
+MKVCleaver 64 bit|0.8.0.0
+MKVToolNix 61.0.0 (64-bit)|61.0.0
+Mozilla Firefox (x64 en-US)|94.0.1
+Mozilla Maintenance Service|89.0.2
+MSYS2 64bit|20210725
+NetWorx 6.2.9|
+Notion 2.0.16|2.0.16
+NVIDIA Graphics Driver 461.40|461.40
+NVIDIA HD Audio Driver 1.3.38.40|1.3.38.40
+NVIDIA PhysX|9.09.0203
+NVIDIA PhysX System Software 9.19.0218|9.19.0218
+NVIDIA USBC Driver 1.46.831.832|1.46.831.832
+Origin|10.5.106.49298
+Outlook|1.0
+Pandoc 2.15|2.15
+Portal 2|
+PowerPoint|1.0
+Progress Telerik Fiddler|5.0.20204.45441
+ProtonVPN|1.24.1
+ProtonVPNTap|1.1.3
+ProtonVPNTun|0.13.0
+PunkBuster Services|0.988
+Python 2.7.1|2.7.1150
+Python 3.9.5 (64-bit)|3.9.5150.0
+Realtek Audio Driver|6.0.9088.1
+Red Dead Redemption 2|
+Rockstar Games Launcher|1.0.36.344
+Rockstar Games Social Club|2.0.7.9
+ShareX|13.6.1
+Sniper Ghost Warrior Contracts|
+Starsector by Fractal Softworks LLC|
+Steam|2.10.91.91
+StrokesPlus.net version 0.5.5.0|0.5.5.0
+Sublime Text|
+Subloader (remove only)|
+SumatraPDF|3.3.3
+TEKKEN 7|
+TEKKEN 7: Ultimate Edition|
+Telegram Desktop version 3.2.2|3.2.2
+The Witcher 3: GotY Edition|
+Titanfallr 2|
+Ubisoft Connect|114.1
+WezTerm version 20211103-091732-154691a1|20211103-091732-154691a1
+Windows PC Health Check|3.2.2110.14001
+Word|1.0
+World Time System Tray|
+Wox|1.3.524
+x86_64-8.1.0-posix-seh-rt_v6-rev0|
+XYplorer 22.30|22.30
+Zscaler|3.5.0.100
+87 applications not managed with Chocolatey.

@@ -1,0 +1,1 @@
+choco list -lai > package_list.txt
