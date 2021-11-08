@@ -1,0 +1,597 @@
+[
+    // =========================================================
+    // ====================== Built-ins ========================
+    // =========================================================
+
+    // Insert lines above & below
+    // {
+    //     "key": "ctrl+enter",
+    //     "command": "editor.action.insertLineBefore",
+    //     "when": "editorTextFocus && !editorReadonly && !inSearchEditor"
+    // },
+    // {
+    //     "key": "shift+enter",
+    //     "command": "editor.action.insertLineAfter",
+    //     "when": "editorTextFocus && !editorReadonly"
+    // },
+
+    {
+        // By default, this is bound to Ctrl + K, m
+        // but I press this by mistake
+        "key": "ctrl+k ctrl+m",
+        "command": "workbench.action.editor.changeLanguageMode"
+    },
+
+    {
+        // Markdown plugins override this to Bold
+        "key": "ctrl+b",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+
+    // Cycle through tabs in linear order and not MRU
+    {
+        "key": "ctrl+tab",
+        "command": "workbench.action.nextEditorInGroup"
+    },
+    {
+        "key": "ctrl+shift+tab",
+        "command": "workbench.action.previousEditorInGroup"
+    },
+
+    {
+        // Similar to Sublime Text's Project switcher
+        "key": "ctrl+alt+p",
+        "command": "workbench.action.openRecent"
+    },
+    // {
+    //     "key": "ctrl+alt+enter",
+    //     "command": "editor.action.openLink"
+    // },
+
+    // Ctrl + D selects a single word
+    {
+        "key": "ctrl+d",
+        "command": "editor.action.addSelectionToNextFindMatch",
+        "when": "editorFocus"
+    },
+
+    // Alt + D selects them all!
+    {
+        "key": "alt+d",
+        "command": "editor.action.selectHighlights",
+        "when": "editorFocus"
+    },
+
+    // Only zoom in on the font and not the rest of the window
+    {
+        "key": "ctrl+=",
+        "command": "editor.action.fontZoomIn",
+    },
+    {
+        "key": "ctrl+-",
+        "command": "editor.action.fontZoomOut",
+    },
+
+    // Keep the parameter hints disabled by default
+    // But use this shortcut to view them on demand
+    {
+        "key": "ctrl+shift+space",
+        "command": "editor.action.triggerParameterHints",
+        "when": "editorHasSignatureHelpProvider && editorTextFocus"
+    },
+
+    // This allows to hide the hints with the same shortcut
+    // Esc works as well.
+    // https://github.com/Microsoft/vscode/issues/5365#issuecomment-211050639
+    {
+        "key": "ctrl+shift+space",
+        "command": "closeParameterHints",
+        "when": "editorTextFocus && parameterHintsVisible"
+    },
+
+    // Sub-word navigation without the Ctrl key - just like Sublime!
+    // https://code.visualstudio.com/updates/v1_25#_subword-support
+    {
+        "key": "alt+right",
+        "command": "cursorWordPartRight",
+        "when": "textInputFocus || inSearchEditor"
+    },
+    {
+        "key": "shift+alt+right",
+        "command": "cursorWordPartRightSelect",
+        "when": "textInputFocus || inSearchEditor"
+    },
+    {
+        "key": "alt+left",
+        "command": "cursorWordPartStartLeft",
+        "when": "textInputFocus || inSearchEditor"
+    },
+    {
+        "key": "shift+alt+left",
+        "command": "cursorWordPartStartLeftSelect",
+        "when": "textInputFocus || inSearchEditor"
+    },
+    {
+        "key": "alt+backspace",
+        "command": "deleteWordPartLeft",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+backspace",
+        "command": "deleteWordPartRight",
+        "when": "textInputFocus && !editorReadonly"
+    },
+
+    // GoTo Definition, References etc.
+    // By default, Ctrl + G goes to a line - but I don't use that much
+    // Perhaps bind these to Alt + G?
+    {
+        "key": "ctrl+g",
+        "command": "editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "ctrl+alt+g",
+        "command": "references-view.find",
+        "when": "editorHasReferenceProvider"
+    },
+
+    // Remove the default duplicate action
+    // Instead use the one provided by extension:
+    {
+        "key": "ctrl+shift+d",
+        "command": "-editor.action.copyLinesDownAction",
+        "when": "editorFocus"
+    },
+    {
+        "key": "alt+shift+-",
+        "command": "workbench.action.navigateToLastEditLocation"
+    },
+
+    {
+        "key": "shift+9",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorHasSelection",
+        "args": {
+            "snippet": "(${1:${TM_SELECTED_TEXT}})"
+        }
+    },
+    {
+        "key": "shift+0",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorHasSelection",
+        "args": {
+            "snippet": "(${1:${TM_SELECTED_TEXT}})"
+        }
+    },
+    {
+        "key": "[",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorHasSelection",
+        "args": {
+            "snippet": "[${1:${TM_SELECTED_TEXT}}]"
+        }
+    },
+    {
+        "key": "]",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorHasSelection",
+        "args": {
+            "snippet": "[${1:${TM_SELECTED_TEXT}}]"
+        }
+    },
+    {
+        "key": "shift+[",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorHasSelection",
+        "args": {
+            "snippet": "{${1:${TM_SELECTED_TEXT}}}"
+        }
+    },
+    {
+        "key": "shift+]",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorHasSelection",
+        "args": {
+            "snippet": "{${1:${TM_SELECTED_TEXT}}}"
+        }
+    },
+    {
+        "key": "shift+'",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorHasSelection",
+        "args": {
+            "snippet": "\"${1:${TM_SELECTED_TEXT}}\""
+        }
+    },
+    {
+        "key": "'",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorHasSelection",
+        "args": {
+            "snippet": "'${1:${TM_SELECTED_TEXT}}'"
+        }
+    },
+
+    // Explorer View: Create New file or folder
+    {
+        "key": "ctrl+n",
+        "command": "explorer.newFolder",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "ctrl+m",
+        "command": "explorer.newFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+
+    // Toggle focus between editor and terminal
+    {
+        "key": "alt+\\",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "alt+\\",
+        "command": "workbench.action.terminal.focus",
+        "when": "!terminalFocus"
+    },
+
+    {
+        "key": "ctrl+shift+h",
+        "command": "workbench.action.terminal.newWithCwd",
+        "args": {
+            "cwd": "${fileDirname}"
+        }
+    }
+
+    {
+        "key": "ctrl+shift+i",
+        "command": "editor.action.formatDocument",
+        "when": "editorTextFocus"
+    },
+
+    // Open files instead of folders
+    {
+        "key": "ctrl+o",
+        "command": "workbench.action.files.openFile"
+    },
+
+    {
+        "key": "ctrl+'",
+        // "command": "editor.action.smartSelect.expand",
+        "command": "expand_region",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+'",
+        "command": "editor.action.smartSelect.shrink",
+        "when": "editorTextFocus"
+    },
+
+    {
+        "key": "shift+alt+1",
+        "command": "workbench.action.closeEditorsInOtherGroups",
+        "when": "editorTextFocus"
+    },
+
+    // Search editor!
+    // https://github.com/microsoft/vscode/issues/95582
+    {
+        "key": "alt+k alt+t",
+        "command": "search.action.openNewEditor",
+        "args": {
+            "query": "(TODO|NOTE|BUG|FIXME):",
+            "regexp": true,
+            "triggerSearch": true,
+            "focusResults": true,
+            "contextLines": 0,
+        },
+        "when": "editorTextFocus"
+    },
+
+    // The markdown package overrides these keys with some random action
+
+    {
+        "key": "ctrl+shift+[",
+        "command": "editor.fold",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+
+    {
+        "key": "ctrl+shift+]",
+        "command": "editor.unfold",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+
+    // =========================================================
+    // ============= Focus WorkBench Components ================
+    // =========================================================
+
+    {
+        "key": "ctrl+k o",
+        "command": "workbench.files.action.focusOpenEditorsView",
+        "when": "workbench.explorer.openEditorsView.active"
+    },
+
+    {
+        "key": "ctrl+k ctrl+o",
+        "command": "workbench.files.action.focusOpenEditorsView",
+        "when": "workbench.explorer.openEditorsView.active"
+    },
+
+    {
+        "key": "ctrl+k e",
+        "command": "workbench.view.explorer",
+        // "when": "workbench.explorer.openEditorsView.active"
+    },
+
+    {
+        "key": "ctrl+k ctrl+e",
+        "command": "workbench.view.explorer",
+        // "when": "workbench.explorer.openEditorsView.active"
+    },
+
+
+    {
+        "key": "ctrl+k f",
+        "command": "workbench.view.search",
+        // "when": "workbench.explorer.openEditorsView.active"
+    },
+
+    {
+        "key": "ctrl+k ctrl+f",
+        "command": "workbench.view.search",
+        // "when": "workbench.explorer.openEditorsView.active"
+    },
+
+
+
+    // https://github.com/microsoft/vscode/issues/89353
+    {
+        "key": "ctrl+shift+f",
+        "command": "search.action.openNewEditor",
+        "when": "",
+
+        // "args": {
+        //     "excludes": "package-lock.json"
+        // },
+    },
+
+    // {
+    //     "key": "ctrl+r",
+    //     "command": "breadcrumbs.focusAndSelect",
+    //     "when": "editorTextFocus",
+    // }
+
+
+    // =========================================================
+    // ======================= Latex ===========================
+    // =========================================================
+
+    {
+        "key": "alt+k alt+v",
+        "command": "latex-workshop.view",
+        "when": "editorTextFocus"
+    },
+
+    {
+        "key": "alt+b",
+        "command": "latex-workshop.build",
+        "when": "editorTextFocus"
+    },
+
+    {
+        "key": "alt+j",
+        "command": "latex-workshop.synctex",
+        "when": "editorTextFocus"
+    },
+
+    // =========================================================
+    // ========================= Git ===========================
+    // =========================================================
+
+    {
+        "key": "ctrl+\\ ctrl+d",
+        "command": "git.openChange",
+        "when": "config.git.enabled && gitOpenRepositoryCount != 0 && editorFocus && !isInDiffEditor"
+    },
+
+    {
+        "key": "ctrl+\\ ctrl+c",
+        "command": "git.commit",
+        "when": "config.git.enabled && gitOpenRepositoryCount != 0"
+    },
+
+    {
+        "key": "ctrl+\\ ctrl+a",
+        "command": "git.stage",
+        "when": "config.git.enabled && gitOpenRepositoryCount != 0"
+    },
+
+    {
+        "key": "h",
+        "command": "git.stageSelectedRanges",
+        "when": "config.git.enabled && gitOpenRepositoryCount != 0 && isInDiffEditor && textCompareEditorVisible"
+    },
+
+    {
+        "key": "shift+h",
+        "command": "git.revertSelectedRanges",
+        "when": "config.git.enabled && gitOpenRepositoryCount != 0 && isInDiffEditor && textCompareEditorVisible"
+    },
+
+    {
+        "key": ",",
+        "command": "workbench.action.compareEditor.previousChange",
+        "when": "config.git.enabled && gitOpenRepositoryCount != 0 && isInDiffEditor && textCompareEditorVisible"
+    },
+
+    {
+        "key": ".",
+        "command": "workbench.action.compareEditor.nextChange",
+        "when": "config.git.enabled && gitOpenRepositoryCount != 0 && isInDiffEditor && textCompareEditorVisible"
+    },
+
+    {
+        "key": "alt+.",
+        "command": "workbench.action.editor.nextChange",
+        "when": "config.git.enabled && gitOpenRepositoryCount != 0 && editorTextFocus"
+    },
+
+    {
+        "key": "alt+,",
+        "command": "workbench.action.editor.previousChange",
+        "when": "config.git.enabled && gitOpenRepositoryCount != 0 && editorTextFocus"
+    },
+
+    // Git lens sucks!
+    {
+        "key": "ctrl+\\ ctrl+\\",
+        "command": "gitlens.showQuickRepoStatus",
+        "when": "gitlens:enabled"
+    },
+    // {
+    //     "key": "ctrl+shift+g s",
+    //     "command": "-gitlens.showQuickRepoStatus",
+    //     "when": "gitlens:enabled && config.gitlens.keymap == 'chorded'"
+    // },
+
+    // =========================================================
+    // =================== Other Extensions ====================
+    // =========================================================
+
+    // Ctrl
+    {
+        "key": "ctrl+k ctrl+t",
+        "command": "extension.changeCase.title"
+    },
+
+    // Toggle unordered list marker in Markdown files
+    {
+        "key": "alt+q",
+        "command": "markdown.extension.editing.toggleUnorderedList",
+        "when": "editorTextFocus && editorLangId == markdown"
+    },
+
+    // =========================================================
+    // =============== Zarel Sublime Commands ==================
+    // =========================================================
+
+    // {
+    //     "key": "ctrl+l",
+    //     "command": "extension.expandToLine",
+    //     "when": "editorFocus"
+    // },
+
+    // {
+    //     "key": "ctrl+shift+l",
+    //     "command": "extension.splitIntoLines",
+    //     "when": "editorFocus"
+    // },
+
+    {
+        "key": "ctrl+j",
+        "command": "extension.joinLines",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+
+    {
+        "key": "ctrl+shift+z",
+        "command": "editWithShell.runCommand",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+
+    // =========================================================
+    // =================== Settings Cycler =====================
+    // =========================================================
+
+    {
+        "key": "alt+ctrl+l",
+        "command": "settings.cycle.lineNumbers",
+        "when": "editorFocus"
+    },
+
+
+    // =========================================================
+    // ===================== REST Client =======================
+    // =========================================================
+
+    {
+        "key": "ctrl+enter",
+        "command": "rest-client.request",
+        "when": "editorTextFocus && editorLangId == 'http'"
+    },
+
+
+    // =========================================================
+    // ==================== Comment Bars =======================
+    // =========================================================
+
+    {
+        "key": "ctrl+k ctrl+c",
+        "command": "commentbars.generateQuick",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+
+    // =========================================================
+    // ======================= Python ==========================
+    // =========================================================
+
+    {
+        "key": "ctrl+e ctrl+f",
+        "command": "python.runFailedTests",
+        "when": "editorTextFocus && !findInputFocussed && !replaceInputFocussed"
+    },
+    {
+        "key": "alt+'",
+        "command": "bookmarks.jumpToNext",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+l",
+        "command": "-bookmarks.jumpToNext",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+;",
+        "command": "bookmarks.jumpToPrevious",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+j",
+        "command": "-bookmarks.jumpToPrevious",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+;",
+        "command": "bookmarks.expandSelectionToPrevious",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+j",
+        "command": "-bookmarks.expandSelectionToPrevious",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+'",
+        "command": "bookmarks.expandSelectionToNext",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+l",
+        "command": "-bookmarks.expandSelectionToNext",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-python.execSelectionInTerminal",
+        "when": "editorTextFocus && !findInputFocussed && !jupyter.ownsSelection && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-markdown-preview-enhanced.runCodeChunk",
+        "when": "editorLangId == 'markdown'"
+    },
+
+]

@@ -1,0 +1,481 @@
+{
+    "diffEditor.renderSideBySide": false,
+
+    "breadcrumbs.enabled": true,
+    "breadcrumbs.showArrays": false,
+    "breadcrumbs.showBooleans": false,
+    "breadcrumbs.showNumbers": false,
+    "breadcrumbs.showOperators": false,
+    "breadcrumbs.showConstants": false,
+    "breadcrumbs.showVariables": false,
+    "breadcrumbs.showProperties": false,
+
+    "editor.emptySelectionClipboard": false,
+
+    // "editor.find.autoFindInSelection": true,
+    "editor.find.seedSearchStringFromSelection": true,
+
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 16,
+    // "editor.formatOnPaste": true,
+    "editor.hideCursorInOverviewRuler": false,
+    // "editor.lineNumbers": "off",
+    "editor.minimap.enabled": false,
+
+    "editor.multiCursorModifier": "alt",
+
+    "editor.parameterHints.enabled": false,
+    "editor.renderWhitespace": "none",
+    "editor.scrollBeyondLastLine": false,
+    "editor.snippetSuggestions": "top",
+    "editor.tabSize": 4,
+    "editor.wordBasedSuggestions": true,
+    "editor.wordWrap": "on",
+
+    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.fontFamily": "Fira Code",
+    "extensions.ignoreRecommendations": true,
+
+    "files.associations": {
+        "*.sublime-project": "json",
+        "*.zsh": "shellscript",
+        ".pylintrc": "ini",
+        "*.desktop": "ini",
+        ".rgignore": "gitignore",
+        ".visidatarc": "python"
+    },
+    "files.exclude": {
+        // Ignore all deeply nested files in the _Help directory
+        // "**/_Help/*/*/*": true,
+        "**/.git": true,
+        "**/node_modules": true,
+        "**/__pycache__": true,
+
+        // SQL Data Dump
+        "**/*.pgsql": true,
+        "**/package-lock.json": true,
+
+        // Compiled files
+        "**/*.zwc": true,
+        "**/*.pyc": true,
+
+        // ?
+        "**/tags": true,
+    },
+    "files.watcherExclude": {
+        "**/_Help/*/*": true,
+        "**/__pycache__": true,
+    },
+
+    // Keep unsaved files when switching workspaces
+    // https://github.com/Microsoft/vscode/issues/15949#issuecomment-414819905
+    "files.hotExit": "onExitAndWindowClose",
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": false,
+
+    "git.autofetch": true,
+
+    // Searching across multiple files
+    // This doesn't change the Ctrl+F find settings
+    // "search.location": "panel",
+    "search.showLineNumbers": true,
+    "search.searchOnType": false,
+    "search.smartCase": true,
+    "search.searchEditor.doubleClickBehaviour": "openLocationToSide",
+    "search.useGlobalIgnoreFiles": true,
+
+    "window.menuBarVisibility": "toggle",
+    "window.titleBarStyle": "native",
+
+    "explorer.confirmDragAndDrop": false,
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.editor.highlightModifiedTabs": true,
+    // "workbench.editor.limit.enabled": true,
+    // "workbench.editor.limit.value": 50,
+    "workbench.list.keyboardNavigation": "filter",
+    "workbench.statusBar.visible": true,
+    "workbench.colorCustomizations": {
+        "[Monokai Extended Dark]": {
+        "statusBar.background": "#333333",
+        "statusBar.noFolderBackground": "#333333",
+        // "statusBar.debuggingBackground": "#771111",
+        "statusBar.debuggingBackground": "#333333",
+        "statusBar.debuggingBorder": "#FF5555",
+        "statusBarItem.prominentBackground": "#771111",
+        "statusBarItem.remoteBackground": "#333333",
+        // "editor.selectionBackground": "#ff0000"
+        // "editor.lineHighlightBackground": "#4a493d"
+        },
+    },
+
+    "path-intellisense.absolutePathToWorkspace": false,
+    "path-intellisense.autoSlashAfterDirectory": true,
+
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.shell.linux": "/bin/zsh",
+
+    "sync.gist": "0cad112444e4027c76e6657619b2486d",
+    "clock.alignment": "Right",
+
+    "vsnotes.defaultNotePath": "~/notes",
+
+    "insertDateString.format": "MMM DD @ H:m A",
+
+    "autoDocstring.docstringFormat": "google",
+
+    "git-graph.date.format": "Relative",
+    "git-graph.repository.commits.initialLoad": 100,
+    "git-graph.repository.commits.mute.commitsThatAreNotAncestorsOfHead": true,
+
+    "todo.embedded.provider": "rg",
+
+    "google.input.tools.language": "hi",
+    "google.input.tools.suggestions": 3,
+
+    "[sql]": {
+        // "editor.defaultFormatter": "mtxr.sqltools",
+        "editor.defaultFormatter": "bradymholt.pgformatter"
+    },
+
+    "[Log]": {
+        "editor.wordWrap": "off" // "off", "bounded", "wordWrapColumn"
+    },
+
+
+    // =========================================================
+    // ================= Language: Markdown ====================
+    // =========================================================
+
+    "[markdown]": {
+        // "editor.suggestOnTriggerCharacters": false,
+        "editor.wordBasedSuggestions": true,
+        // "editor.quickSuggestionsDelay": 500,
+    },
+
+    "markdown.preview.fontSize": 13,
+    // "markdown-preview-enhanced.previewTheme": "monokai.css",
+
+    "markdown.extension.list.indentationSize": "inherit",
+    "markdown.extension.toc.githubCompatibility": true,
+
+    // =========================================================
+    // =================== Settings Cycler =====================
+    // =========================================================
+
+    "settings.cycle": [
+        {
+            "id": "lineNumbers",
+            "values": [
+                { "editor.lineNumbers": "off" },
+                { "editor.lineNumbers": "on" }
+            ]
+        }
+    ],
+
+    // =========================================================
+    // ============== Extension: Multi Commands ================
+    // =========================================================
+
+    "multiCommand.commands": [
+        {
+            "command": "multiCommand.makeRoom",
+            "sequence": [
+                "workbench.action.toggleSidebarVisibility",
+                "workbench.action.toggleActivityBarVisibility"
+            ]
+        }
+    ],
+
+    // =========================================================
+    // ================= Extension: Gitlens ====================
+    // =========================================================
+
+    "gitlens.keymap": "alternate",
+    "gitlens.advanced.telemetry.enabled": false,
+    // https: //github.com/eamodio/vscode-gitlens/issues/54
+    "gitlens.codeLens.recentChange.enabled": false,
+    "gitlens.codeLens.authors.enabled": false,
+    "gitlens.currentLine.enabled": false,
+
+    // =========================================================
+    // ================ Extension: Remote SSH ==================
+    // =========================================================
+
+    "remote.extensionKind": {
+        "arjun.swagger-viewer": ["ui"],
+        "coddx.coddx-alpha": ["ui"],
+        "davidwang.ini-for-vscode": ["ui"],
+        "letrieu.expand-region": ["ui"],
+        "patricklee.vsnotes": ["ui"],
+        "redhat.vscode-yaml": ["ui"],
+        "TwoUnderscorez.vscode-websearch": ["ui"],
+        "vscode-snippet.Snippet": ["ui"],
+        "dnek.auto-region-folder": ["ui"],
+        "maptz.regionfolder": ["ui"],
+        "jakewilson.vscode-cdnjs": ["ui"],
+    },
+
+    // =========================================================
+    // ================== Extension: Python ====================
+    // =========================================================
+
+    "python.testing.pytestEnabled": false,
+    // "python.testing.pytestArgs": [
+    //     "-o", "junit_family=xunit1",
+    // ],
+
+    // Delay the errors: https://github.com/Microsoft/vscode-python/issues/2270
+    "python.analysis.diagnosticPublishDelay": 3000,
+    // Lint with PyLint
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.terminal.executeInFileDir": true,
+    "python.formatting.provider": "autopep8",
+
+    "python.envFile": "${workspaceFolder}/.vscode.env",
+    "python.languageServer": "Pylance",
+    "python.showStartPage": false,
+    "python.testing.autoTestDiscoverOnSaveEnabled": false,
+    "python.workspaceSymbols.tagFilePath": "${workspaceFolder}/.vscode/ctags",
+
+    // "python.linting.pylintUseMinimalCheckers": false,
+    // "python.linting.pylintArgs": [
+    //     "--rcfile",
+    //     "${workspaceFolder}\\.pylintrc"
+    // ],
+
+    // =========================================================
+    // =============== Extension: Rest Client ==================
+    // =========================================================
+    "rest-client.enableCustomVariableReferencesCodeLens": false,
+    "rest-client.enableSendRequestCodeLens": false,
+    "rest-client.enableTelemetry": false,
+    "rest-client.fontSize": 14,
+    "rest-client.largeResponseBodySizeLimitInMB": 1,
+    "rest-client.previewResponsePanelTakeFocus": false,
+    "rest-client.requestNameAsResponseTabTitle": true,
+    "rest-client.previewOption": "body",
+
+    // =========================================================
+    // ==================== Comment Bars =======================
+    // =========================================================
+
+    // https://github.com/zfzackfrost/vscode-commentbars/blob/master/package.json
+
+    "commentbars.commentDelimsUser": {
+        "sql": { "start": "/* ", "end": " */" },
+        "gitignore": { "start": "# ", "end": "" },
+        "autohotkey": { "start": "; ", "end": "" },
+        "ahk": { "start": "; ", "end": "" },
+    },
+
+    "commentbars.quickPresets": [
+        { "label": "Medium (Long)", "fillChar": "=", "width": 100, "thickness": 3 },
+        { "label": "Medium (Short)", "fillChar": "=", "width": 60, "thickness": 3 },
+
+        { "label": "Heavy (Short)", "fillChar": "#", "width": 75, "thickness": 3, "seamlessFill": true },
+        { "label": "Normal (Short)", "fillChar": "~", "width": 45, "thickness": 1 },
+        { "label": "Light (Short)", "fillChar": "-", "width": 30, "thickness": 1 }
+    ],
+
+    // =========================================================
+    // ================ Postgres Connections ===================
+    // =========================================================
+
+    "pgsql.connections": [
+        {
+            "host": "localhost",
+            "dbname": "risklimits_db",
+            "user": "szafar",
+            "password": "",
+            "emptyPasswordInput": true,
+            "port": "21032",
+            "profileName": "RiskLimits DB - Local"
+        }
+    ],
+    "sqltools.connections": [
+        {
+            "askForPassword": false,
+            "database": "risklimits_db",
+            "driver": "PostgreSQL",
+            "name": "RiskLimits - Local",
+            "port": 21032,
+            "server": "localhost",
+            "username": "szafar"
+        }
+    ],
+
+    //#region ============= Web Search ========================
+
+    "websearch.ac_engine": "Google",
+    "websearch.default_engine": "Google",
+    "websearch.engines": [
+        {
+            "Name": "DuckDuckGo",
+            "URI": "duckduckgo.$#$/?q="
+        },
+        {
+            "Name": "Google",
+            "URI": "www.google.$#$/search?q="
+        },
+    ],
+
+    //#endregion
+
+    // =========================================================
+    // ================== Extension: Print =====================
+    // =========================================================
+
+    "print.colourScheme": "github",
+    "print.printAndClose": false,
+    "print.browserPath": "/usr/bin/google-chrome-stable",
+
+    // =========================================================
+    // ============= Extension: Trailing Spaces ================
+    // =========================================================
+    "trailing-spaces.deleteModifiedLinesOnly": true,
+    "trailing-spaces.highlightCurrentLine": false,
+
+    // =========================================================
+    // ================ Extension: TODO Tree ===================
+    // =========================================================
+
+    // TODO: Build a tasks tool over such a tree?
+    "todo-tree.tree.showScanModeButton": false,
+    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|\\*|^\\s*(-|\\d+.))\\s*($TAGS)",
+    "todo-tree.highlights.defaultHighlight": {
+        "foreground": "#f92672",
+    },
+    "todo-tree.tree.scanAtStartup": false,
+    "todo-tree.general.tags": [
+        "BUG",
+        "ISSUE",
+        "HACK",
+        "FIXME",
+        "TODO",
+        "XXX",
+        "NOTE",
+        "[ ]",
+        "[x]"
+    ],
+    "todo-tree.highlights.customHighlight": {
+        "TODO": {},
+        "ISSUE": {},
+        "FIXME": {}
+    },
+
+    // =========================================================
+    // ============== Extension: Latex Workshop ================
+    // =========================================================
+    "latex-workshop.latex.autoBuild.run": "never",
+    "latex-workshop.latex.autoBuild.interval": 5000,
+    "latex-workshop.latex.autoBuild.cleanAndRetry.enabled": false,
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                // "-f",
+                "--shell-escape",
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-pdf",
+                "-outdir=%OUTDIR%",
+                "%DOC%"
+            ],
+            "env": {}
+        },
+        {
+            "name": "pdflatex",
+            "command": "pdflatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ],
+            "env": {}
+        },
+        {
+            "name": "bibtex",
+            "command": "bibtex",
+            "args": [
+                "%DOCFILE%"
+            ],
+            "env": {}
+        }
+    ],
+    "sqltools.tableTreeItemsExpanded": true,
+    "git.countBadge": "off",
+
+    "customizeUI.activityBar": "bottom",
+    "customizeUI.stylesheet": {
+        // Hide the file name in tab bar as well
+        // ".title.show-file-icons": "display: none !important;"
+    },
+
+    "workbench.editor.showTabs": false,
+
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+
+    "maptz.regionfolder": {
+        "[shell]": {
+            "foldStart": "# #region [NAME]",
+            "foldStartRegex": "#[\\s]*#region[\\s]*(.*)",
+            "foldEnd": "# #endregion",
+            "foldEndRegex": "#[\\s]*#endregion",
+        }
+    },
+    "editor.lineNumbers": "on",
+    "explorer.confirmDelete": false,
+    "git.ignoreLegacyWarning": true,
+    "http.proxyStrictSSL": false,
+    // "workbench.iconTheme": "vscode-icons",
+    "diffEditor.wordWrap": "off",
+    "editor.wordBasedSuggestionsMode": "allDocuments",
+
+    "tabnine.experimentalAutoImports": true,
+    "terminal.integrated.drawBoldTextInBrightColors": false,
+    "terminal.integrated.enableFileLinks": false,
+    "latex-workshop.message.update.show": false,
+    "C_Cpp.intelliSenseEngineFallback": "Enabled",
+    "C_Cpp.intelliSenseEngine": "Tag Parser",
+    "C_Cpp.codeFolding": "Disabled",
+    "ctagsymbols.tagsFileName": ".vscode/.tags",
+    "editor.formatOnPaste": true,
+    "settingsSync.keybindingsPerPlatform": false,
+    "remote.SSH.remotePlatform": {
+        "tower": "linux"
+    },
+    "workbench.startupEditor": "welcomePage",
+    "terminal.integrated.inheritEnv": false,
+    "notebook.kernelProviderAssociations": [
+        {
+            "viewType": "jupyter-notebook",
+            "kernelProvider": "ms-toolsai.jupyter"
+        }
+    ],
+    "jupyter.askForKernelRestart": false,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "remote.SSH.useFlock": false,
+    "redhat.telemetry.enabled": false,
+    "python.analysis.typeCheckingMode": "off",
+    "window.dialogStyle": "custom",
+    "workbench.colorTheme": "GitHub Dark Default",
+    "window.zoomLevel": -1,
+    "search.quickOpen.includeSymbols": true,
+    "todo-tree.filtering.useBuiltInExcludes": "file and search excludes",
+    "git.confirmSync": false,
+    "terminal.integrated.allowChords": false,
+    // "workbench.colorTheme": "Monokai",
+}
