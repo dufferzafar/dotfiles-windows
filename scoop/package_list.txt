@@ -1,0 +1,9 @@
+Installed apps: 
+
+  7zip 19.00 [main]
+  cacert 2021-10-26 [main]
+  gh 2.2.0 [main]
+  git 2.30.0.windows.2 [main]
+  just 0.10.3 [main]
+  wget 1.21.2 [main]
+
