@@ -1,0 +1,18 @@
+gui:
+  # stuff relating to the UI
+  scrollHeight: 30 # how many lines you scroll by
+  scrollPastBottom: false # enable scrolling past the bottom
+  sidePanelWidth: 0.4 # number from 0 to 1
+
+git:
+  paging:
+    useConfig: false
+
+keybinding:
+  universal:
+      # Swap the two bindings because e is easier to reach than o
+      edit: 'o'
+      openFile: 'e'
+
+reporting: "on"
+startuppopupversion: 1
